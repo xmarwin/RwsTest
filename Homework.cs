@@ -40,7 +40,7 @@ namespace Moravia.Homework
 
             var targetStream = File.Open(targetFileName, FileMode.Create, FileAccess.Write);
             var sw = new StreamWriter(targetStream); // use using statement
-            sw.Write(serializedDoc); // use await sw.Write(serializedDoc)
+            sw.Write(serializedDoc); // use await sw.WriteAsync(serializedDoc)
         }
     }
 }
